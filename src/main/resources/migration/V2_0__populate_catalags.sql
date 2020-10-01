@@ -1,5 +1,5 @@
 --Insert brand script
-insert into BRAND(id, description) values (1, 'ZARA');
+insert into BRAND(id, description) values (1, 'MARCA');
 --Insert Table product script
 insert into PRODUCT(id, description) values (35455, 'PANTALON');
 --Insert Table currency script

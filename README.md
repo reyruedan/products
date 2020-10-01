@@ -5,7 +5,7 @@ Products test
     me estaba saliendo del alcance de lo solitado.
 - existe en los test integrados un populate que nutre la tabla prices.
 - he normalizado un poco el modelo de bbdd dado.
--he creado la carpeta api, pero sería una librería para compartir dto entre micro.
+-he creado la carpeta api, pero sería una librería para compartir dto entre micros.
 - los 5 casos de test están en los integrados los cuales se ejecutan con el profile:
     mvn clean install -PintegrationTests
  - los test unitarios con :
