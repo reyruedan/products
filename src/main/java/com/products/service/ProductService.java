@@ -18,7 +18,7 @@ import java.time.LocalDateTime;
 import java.util.Comparator;
 
 /**
- * Service product class in charge to handle product operations.
+ * Service product class in charge to handle product service operations.
  */
 @Slf4j
 @Service
