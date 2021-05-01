@@ -34,7 +34,7 @@ public class ProductController {
     public static final String PRODUCT_API_PATH = "/products";
 
     /**
-     * Product service class.
+     * Product service class operations.
      */
     @Autowired
     private ProductService productService;
