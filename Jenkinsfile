@@ -9,7 +9,6 @@ pipeline {
             post {
                 success {
                     echo 'Achiving....'
-                    sh 'make'
                     archiveArtifacts artifacts: '**/target/*.jar', fingerprint: true
                 }
             }
