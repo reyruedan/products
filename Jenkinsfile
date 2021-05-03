@@ -2,13 +2,7 @@ pipeline {
   agent any
 
   stages {
-    stage('Compile') {
-      steps {
-        sh 'mvn compile'
-      }
-      post {
-        success {
-          stage('Build') {
+         stage('Build') {
             steps {
               sh 'mvn clean package'
             }
@@ -19,8 +13,6 @@ pipeline {
               }
             }
           }
-        }
-      }
       stage('Deploying to staging') {
         steps {
           build job: 'deployStaging'
@@ -28,4 +20,3 @@ pipeline {
       }
     }
   }
-}
