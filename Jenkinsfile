@@ -15,7 +15,7 @@ pipeline {
         }
          stage('Deploying to staging') {
             steps {
-                build job: 'mavenprojectpipelineFIle'
+                build job: 'deployStaging'
             }
         }
     }
