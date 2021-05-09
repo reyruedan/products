@@ -9,6 +9,7 @@ pipeline {
             post {
               success {
                 echo 'Achiving....'
+                sh 'docker build . -t products:${env.BUILD_ID}'
                 archiveArtifacts artifacts: '**/target/*.jar', fingerprint: true
               }
             }
